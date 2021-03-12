@@ -1,0 +1,160 @@
+{
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "ecmaFeatures": {
+      "experimentalObjectRestSpread": true
+    },
+    "sourceType": "script"
+  },
+  "env": {
+    "node": true,
+    "es6": true,
+    "jest": true
+  },
+  "extends": [
+    "plugin:github/recommended",
+    "eslint:recommended",
+    "prettier"
+  ],
+  "plugins": [
+    "node",
+    "import",
+    "prettier",
+    "jest",
+    "spellcheck"
+  ],
+  "rules": {
+    "indent": [
+      "error",
+      2
+    ],
+    "linebreak-style": [
+      "error",
+      "unix"
+    ],
+    "jsx-quotes": [
+      "error",
+      "prefer-double"
+    ],
+    "quotes": [
+      "error",
+      "single",
+      {
+        "avoidEscape": true
+      }
+    ],
+    "comma-dangle": [
+      "error",
+      "always-multiline"
+    ],
+    "no-case-declarations": "off",
+    "eqeqeq": "warn",
+    "quote-props": [
+      "warn",
+      "consistent-as-needed"
+    ],
+    "keyword-spacing": "error",
+    "eslint-comments/no-use": "off",
+    "import/no-namespace": "off",
+    "no-unused-vars": "off",
+    "camelcase": "off",
+    "semi": "off",
+    "no-console": "off",
+    "node/no-unsupported-features/node-builtins": "off",
+    "node/no-unsupported-features/es-syntax": [
+      "error",
+      {
+        "version": ">=10.13.0"
+      }
+    ],
+    "node/no-unsupported-features/es-builtins": [
+      "error",
+      {
+        "version": ">=10.13.0"
+      }
+    ],
+    "prettier/prettier": "error",
+    "spellcheck/spell-checker": [
+      1,
+      {
+        "lang": "en_GB",
+        "skipWords": [
+          "lunr",
+          "val",
+          "param",
+          "idx",
+          "utils",
+          "namespace",
+          "eslint",
+          "latin",
+          "str",
+          "len",
+          "sqrt",
+          "wildcard",
+          "concat",
+          "metadata",
+          "fn",
+          "params",
+          "lexeme",
+          "lex",
+          "pos",
+          "typedef",
+          "wildcards",
+          "lexemes",
+          "fns",
+          "stemmer",
+          "attrs",
+          "tf",
+          "idf",
+          "lookups",
+          "whitelist",
+          "whitelisted",
+          "tokenizer",
+          "whitespace",
+          "automata",
+          "i",
+          "obj",
+          "anymore",
+          "lexer",
+          "var",
+          "refs",
+          "serializable",
+          "tis",
+          "twas",
+          "int",
+          "args",
+          "unshift",
+          "plugins",
+          "upsert",
+          "upserting",
+          "readonly",
+          "baz",
+          "tokenization",
+          "lunrjs",
+          "com",
+          "olivernn",
+          "github",
+          "js"
+        ]
+      }
+    ],
+    "no-constant-condition": [
+      "error",
+      {
+        "checkLoops": false
+      }
+    ],
+    "dot-location": [
+      "error",
+      "property"
+    ],
+    "brace-style": [
+      "error",
+      "1tbs",
+      {
+        "allowSingleLine": true
+      }
+    ]
+  }
+}
