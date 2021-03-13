@@ -45,7 +45,7 @@
       * [<em>Table of contents</em>](#table-of-contents)
       * [<em>Description</em>](#description)
       * [<em>Inputs</em>](#inputs)
-         * [category](#category)
+         * [language](#language)
          * [pattern](#pattern)
          * [width](#width)
          * [height](#height)
@@ -55,7 +55,7 @@
          * [colorPattern](#colorpattern)
          * [name](#name)
          * [path](#path)
-      * [<em>Outputs</em>`](#outputs)
+      * [<em>Outputs</em>](#outputs)
          * [image](#image)
       * [<em>Examples</em>](#examples)
       * [<em>Visitor stats</em>](#visitor-stats)
@@ -89,51 +89,51 @@ Creates _**Styled Proverbs**_ by language and input color parameters.
 
 ## _Inputs_
 
-### `category`
+### `language`
 
-**Optional** Proverb's category (default **random**)
+**Optional** Proverb's language (default **random**)
 
 ### `pattern`
 
-**Optional** Quote's image background pattern (default **random**)
+**Optional** Proverb's image background pattern (default **random**)
 
 ### `width`
 
-**Optional** Quote's image width (default **100%**)
+**Optional** Proverb's image width (default **100%**)
 
 ### `height`
 
-**Optional** Quote's image height (default **100%**)
+**Optional** Proverb's image height (default **100%**)
 
 ### `backgroundColor`
 
-**Optional** Quote's image background color (default **%23FFFFFF**)
+**Optional** Proverb's image background color (default **%23FFFFFF**)
 
 ### `fontColor`
 
-**Optional** Quote's image font color (default **%230A83DC**)
+**Optional** Proverb's image font color (default **%230A83DC**)
 
 ### `opacity`
 
-**Optional** Quote's image background opacity (default **0.3**)
+**Optional** Proverb's image background opacity (default **0.3**)
 
 ### `colorPattern`
 
-**Optional** Quote's image text color (default **%23FFE0E9**)
+**Optional** Proverb's image text color (default **%23FFE0E9**)
 
 ### `name`
 
-**Optional** Quote's image name (default **quote**)
+**Optional** Proverb's image name (default **proverb**)
 
 ### `path`
 
-**Optional** Quote's image path (default **images**)
+**Optional** Proverb's image path (default **images**)
 
-## _Outputs_`
+## _Outputs_
 
 ### `image`
 
-Generated quote image (stored in the `path` directory)
+Generated proverb image (stored in the `path` directory)
 
 ## _Examples_
 
@@ -149,7 +149,7 @@ Generated quote image (stored in the `path` directory)
 
 Running locally:
 
-- `npm run start:action --action github-action-proverbs --category 'programming' --pattern 'wiggle' --name quote --path images`
+- `npm run start:action --action github-action-proverbs --language 'french' --pattern 'wiggle' --name proverb --path images`
 
 ## _Visitor stats_
 
