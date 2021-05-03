@@ -38,7 +38,7 @@ inputs:
   name:
     description: 'proverbs image name'
     required: false
-    default: 'quote'
+    default: 'proverb'
   path:
     description: 'proverbs image path'
     required: false

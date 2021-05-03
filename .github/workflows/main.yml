@@ -25,14 +25,19 @@ jobs:
       - name: Create dist folder if note exists
         run: mkdir -p dist
 
-      - name: generate chart image
+      - name: generate proverb image
+        id: proverb-image
         uses: ./
         with:
-          url: "https://raw.githubusercontent.com/plotly/plotly.js/master/test/image/mocks/5.json"
-          name: "chart"
+          name: "proverb.svg"
           path: "images"
           width: 400
           height: 400
+
+      - name: Ensure the generated file exists
+        run: |
+          ls -l ${{ steps.proverb-image.outputs.image }}
+          test -f ${{ steps.proverb-image.outputs.image }}
 
       - name: Push changes
         uses: stefanzweifel/git-auto-commit-action@v4

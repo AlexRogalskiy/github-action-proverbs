@@ -76,7 +76,7 @@
     ],
     "prettier/prettier": "error",
     "spellcheck/spell-checker": [
-      1,
+      "off",
       {
         "lang": "en_GB",
         "skipWords": [
