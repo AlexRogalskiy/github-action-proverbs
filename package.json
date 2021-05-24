@@ -17,6 +17,7 @@
     "pretty": "pretty-quick --staged --pattern '!test/tests/lint/**'",
     "semantic-release": "semantic-release",
     "commit": "git-cz",
+    "preinstall": "npx npm-force-resolutions",
     "test:folio": "folio tests/spec/",
     "test": "TZ=utc jest",
     "test:coverage": "jest --collectCoverage",
