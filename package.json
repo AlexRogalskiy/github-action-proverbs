@@ -58,7 +58,7 @@
     "lint-staged": "^10.1.6",
     "prettier": "^2.1.2",
     "pretty-quick": "^3.1.0",
-    "semantic-release": ">=17.2.3"
+    "semantic-release": ">=17.4.7"
   },
   "repository": {
     "type": "git",
